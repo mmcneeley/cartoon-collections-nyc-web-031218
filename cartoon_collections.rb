@@ -6,8 +6,8 @@ end
 
 def summon_captain_planet(veggies)
   veggies.collect do |item|
-    item[0].upcase
-    item << "!!"
+    item[0] = item[0].upcase
+    item << "!"
   end
 end
 
