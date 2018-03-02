@@ -21,8 +21,9 @@ def find_the_cheese(items)
   cheese_types = ["cheddar", "gouda", "camembert"]
   #go through each item, and compare if one of the cheese types is included. otherwise include nil.
   cheese_types.each do |cheese|
-    items.include?(cheese)
-    return cheese
+    if items.include?(cheese)
+      return cheese
+    end
   end
   return nil
 end
